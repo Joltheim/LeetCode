@@ -43,9 +43,9 @@ var merge = (nums1, m, nums2, n) => {
     for (let i = 0; i < n; i++) {
         newArr.push(nums2[i])
     }
-    nums1 = newArr.sort()
+    nums1 = newArr.sort((a, b) => a - b);
     console.log(nums1)
-    return
+    return nums1
 };
 
 merge([1,2,3,0,0,0], 3, [2,5,6], 3)
